@@ -20,6 +20,8 @@ export class MvMain extends LitElement {
 
       main {
         padding: var(--content-padding);
+        grid-area: main;
+        overflow-y: auto;
       }
 
       .header {
@@ -28,11 +30,6 @@ export class MvMain extends LitElement {
 
       .menu {
         grid-area: menu;
-      }
-
-      .main {
-        grid-area: main;
-        overflow-y: auto;
       }
 
       .footer {
@@ -63,7 +60,7 @@ export class MvMain extends LitElement {
       <div class="mv-main-container">
         <div class="header"><slot name="header"></slot></div>
         <div class="menu"><slot name="menu"></slot></div>
-        <div class="main"><main><slot></slot></main></div>
+        <main><slot></slot></main>
         <div class="footer"><slot name="footer"></slot></div>
       </div>
     `;
