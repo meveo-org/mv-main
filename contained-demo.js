@@ -6,7 +6,7 @@ import "mv-footer";
 
 import "./mv-main.js";
 
-export class MvContainedDemo extends LitElement {
+export class ContainedMainDemo extends LitElement {
   static get properties() {
     return {
       value: { type: String, attribute: true }
@@ -71,4 +71,4 @@ export class MvContainedDemo extends LitElement {
   }
 }
 
-customElements.define("mv-contained-demo", MvContainedDemo);
+customElements.define("contained-main-demo", ContainedMainDemo);

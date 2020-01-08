@@ -45,7 +45,7 @@ export class MvMainDemo extends LitElement {
           <mv-menu-panel item>Menu 1</mv-menu-panel>
         </mv-menu-panel>
         <h1>MvMain Demo</h1>
-        <mv-contained-demo></mv-contained-demo>
+        <contained-main-demo></contained-main-demo>
         <mv-container>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna nec tincidunt praesent semper feugiat nibh. Phasellus vestibulum lorem sed risus. In nisl nisi scelerisque eu ultrices vitae. Dolor magna eget est lorem ipsum dolor sit amet. Ligula ullamcorper malesuada proin libero. Lorem ipsum dolor sit amet consectetur. Enim nec dui nunc mattis. Tellus at urna condimentum mattis pellentesque. Pretium lectus quam id leo in vitae turpis. Consectetur adipiscing elit duis tristique sollicitudin. Neque volutpat ac tincidunt vitae semper quis. Proin libero nunc consequat interdum varius sit. Eros donec ac odio tempor orci dapibus ultrices in iaculis. Et egestas quis ipsum suspendisse ultrices. Posuere lorem ipsum dolor sit amet. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet. In aliquam sem fringilla ut morbi. Montes nascetur ridiculus mus mauris vitae ultricies leo.</p>
           <p>Sed odio morbi quis commodo odio aenean sed. Ultrices neque ornare aenean euismod elementum nisi quis eleifend. Quis eleifend quam adipiscing vitae proin sagittis nisl. Vitae auctor eu augue ut lectus arcu bibendum. Et malesuada fames ac turpis egestas. Vel orci porta non pulvinar neque. Eget est lorem ipsum dolor sit amet consectetur adipiscing. Vulputate mi sit amet mauris. Duis convallis convallis tellus id interdum velit laoreet. Consequat ac felis donec et odio pellentesque diam.</p>
