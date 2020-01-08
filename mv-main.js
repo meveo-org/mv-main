@@ -12,10 +12,10 @@ export class MvMain extends LitElement {
       :host {
         font-family: var(--font-family, Arial);
         font-size: var(--font-size-m, 10pt);
-        --header-height: var(--mv-header-height, 0);
-        --footer-height: var(--mv-footer-height, 0);
+        --header-height: var(--mv-header-height, 66px);
+        --footer-height: var(--mv-footer-height, 40px);
         --content-padding: var(--mv-content-padding, 20px);
-        --margin-left: var(--mv-menu-panel-width, 0);        
+        --margin-left: var(--mv-menu-panel-width, 300px);        
       }
 
       main {
