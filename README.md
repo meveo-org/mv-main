@@ -50,4 +50,4 @@ static get styles() {
 }
 ```
 
-You can also check this [demo](https://manaty.net/mv-main/)
+You can also check this [demo](https://main.meveo.org/)
