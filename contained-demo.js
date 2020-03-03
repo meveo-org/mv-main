@@ -9,7 +9,8 @@ import "./mv-main.js";
 export class ContainedMainDemo extends LitElement {
   static get properties() {
     return {
-      value: { type: String, attribute: true }
+      value: { type: String, attribute: true },
+      theme: { type: String, attribute: true }
     };
   }
 
@@ -37,11 +38,11 @@ export class ContainedMainDemo extends LitElement {
     return html`
       <div class="container">
         <mv-main>
-          <mv-header slot="header">
+          <mv-header slot="header" .theme="${this.theme}">
             <mv-header item position="center">MvMain</mv-header>
             <mv-header item position="right"><small>(inside container)</small></mv-header>
           </mv-header>
-          <mv-menu-panel menu showLabel slot="menu">
+          <mv-menu-panel menu showLabel slot="menu" .theme="${this.theme}">
             <mv-menu-panel label>MvMain<small> (inside container)</small></mv-menu-panel>          
             <mv-menu-panel item>Menu 1</mv-menu-panel>
           </mv-menu-panel>
@@ -61,7 +62,7 @@ export class ContainedMainDemo extends LitElement {
           <p>Pellentesque nec nam aliquam sem et tortor consequat id porta. Tellus mauris a diam maecenas sed. Tristique risus nec feugiat in fermentum posuere urna. Amet est placerat in egestas erat imperdiet sed. Netus et malesuada fames ac turpis egestas integer eget. In fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Arcu bibendum at varius vel pharetra vel turpis nunc. Pharetra massa massa ultricies mi quis hendrerit dolor. Egestas dui id ornare arcu odio ut sem nulla. Consectetur adipiscing elit pellentesque habitant morbi. Gravida in fermentum et sollicitudin ac. In nibh mauris cursus mattis molestie a iaculis at erat.</p>
           <p>Vitae auctor eu augue ut lectus. Amet nisl suscipit adipiscing bibendum est. Fermentum odio eu feugiat pretium. Massa placerat duis ultricies lacus sed turpis. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Non curabitur gravida arcu ac tortor. Aliquet nec ullamcorper sit amet risus nullam. Elit scelerisque mauris pellentesque pulvinar. In iaculis nunc sed augue lacus viverra vitae congue eu. Risus sed vulputate odio ut enim. Pretium quam vulputate dignissim suspendisse. Tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse. Ullamcorper morbi tincidunt ornare massa eget. Placerat in egestas erat imperdiet sed euismod nisi porta. Convallis posuere morbi leo urna molestie at elementum eu. Amet mauris commodo quis imperdiet massa tincidunt nunc. Nec dui nunc mattis enim ut tellus elementum sagittis. Libero id faucibus nisl tincidunt eget nullam non nisi. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue.</p>
           <p>Condimentum vitae sapien pellentesque habitant morbi tristique. Pharetra vel turpis nunc eget lorem. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Amet mattis vulputate enim nulla aliquet. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Bibendum neque egestas congue quisque egestas diam in arcu. Sed libero enim sed faucibus turpis in eu mi bibendum. Senectus et netus et malesuada fames ac. Enim blandit volutpat maecenas volutpat blandit aliquam etiam. Faucibus pulvinar elementum integer enim neque volutpat ac. Venenatis urna cursus eget nunc scelerisque viverra. Tristique senectus et netus et malesuada fames. Nunc congue nisi vitae suscipit tellus mauris a diam. Et malesuada fames ac turpis.</p>
-          <mv-footer slot="footer">
+          <mv-footer slot="footer" .theme="${this.theme}">
             <mv-footer item>MvMain Demo</mv-footer>
             <mv-footer item position="right"><small>(inside container)</small></mv-footer>
           </mv-footer>
