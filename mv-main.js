@@ -15,17 +15,19 @@ export class MvMain extends LitElement {
         --header-height: var(--mv-header-height, 0);
         --footer-height: var(--mv-footer-height, 0);
         --content-padding: var(--mv-content-padding, 20px);
-        --margin-left: var(--mv-menu-panel-width, 0);        
+        --margin-left: var(--mv-menu-panel-width, 0);
+        --main-margin-left: var(--mv-main-margin-left, 0);
       }
 
       main {
         padding: var(--content-padding);
         grid-area: main;
         overflow-y: auto;
+        margin-left: var(--main-margin-left);
       }
 
       .header {
-        grid-area: header;        
+        grid-area: header;
       }
 
       .menu {
@@ -46,7 +48,7 @@ export class MvMain extends LitElement {
         display: grid;
         place-items: stretch stretch;
         grid-template-columns: var(--margin-left) auto;
-        grid-template-rows: var(--header-height) auto calc(var(--footer-height) + 1px); 
+        grid-template-rows: var(--header-height) auto calc(var(--footer-height) + 1px);
         grid-template-areas:
           "menu header"
           "menu main"
