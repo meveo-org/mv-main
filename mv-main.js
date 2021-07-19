@@ -11,7 +11,7 @@ export class MvMain extends LitElement {
     return css`
       :host {
         font-family: var(--font-family, Arial);
-        font-size: var(--font-size-m, 10pt);
+        font-size: var(--font-size-m, 1rem);
         --header-height: var(--mv-header-height, 0);
         --footer-height: var(--mv-footer-height, 0);
         --content-padding: var(--mv-content-padding, 20px);
