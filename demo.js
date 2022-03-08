@@ -1,8 +1,8 @@
-import { LitElement, html, css } from "lit-element";
-import "mv-menu-panel";
-import "mv-container";
-import "mv-header";
-import "mv-footer";
+import { LitElement, html, css } from "lit";
+import "@meveo-org/mv-menu-panel";
+import "@meveo-org/mv-container";
+import "@meveo-org/mv-header";
+import "@meveo-org/mv-footer";
 
 import "./mv-main.js";
 import "./contained-demo.js";
